@@ -1,0 +1,265 @@
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' rel='stylesheet'>
+    
+    
+</head>
+<body>
+    <main>
+        <div id="background-image"></div>
+        <div class="container-fluid">
+             <!-- DATE && REF -->
+            <div class="row">
+                <!-- SOURCE -->
+                <div class="col-xs-6" style="text-align: center">
+                    <span class="SizeText" >   المرجع : </span> {{referance}}
+                </div>
+                <!-- DATE -->
+                <div class="col-xs-6">
+                    <span class="SizeText">  التاريخ : </span> {{date}}
+                </div>
+            </div>
+            <!-- LABEL : OFFER PRICE -->
+            <div class="row row-margin-top-price">
+                    <!-- PRICE -->
+                <div class="col-xs-12">
+                    <div style="text-align: center">
+                            <span class="SizeTextPrice">عرض السعر</span>
+                    </div>
+                </div>
+            </div>
+            <!-- INFO CLIENT 1 -->
+            <div class="Group_info_client">
+                    <div class="row sizemarginClient">
+                        <div class="col-xs-12">
+                            <span class="SizeTextClient_Attention"> عناية :</span>
+                            <span class="margin-client-info">{{Ainaya_1}}</span>
+                        </div>
+                    </div>
+                    <div class="row sizemarginClient">
+                        <div class="col-xs-12">
+                            <span class="SizeTextClient_project"> المشروع :</span>
+                             <span class="margin-client-info">{{name_projet}}</span>
+                        </div>
+                    </div>
+                    <div class="row sizemarginClient">
+                        <div class="col-xs-12">       
+                            <span class="SizeTextClient_Attention">عناية :</span>
+                            <span class="margin-client-info">{{Ainaya_2}}</span>
+                        </div>
+                    </div>
+                    <div class="row sizemarginClient">
+                        <div class="col-xs-12">
+                            <span class="SizeTextClient_topic">الموضوع :</span>
+                            <span>  </span>                         
+                        </div>
+                    </div>
+            </div>
+             <!-- GREETING 1 & GREETING 2 & HDPE-->
+            <div class="row sizemarginSubject">
+                <div class="col-xs-12">
+                        <p style="margin-right: 150px">  
+                        السلام عليكم ورحمة الله و بركاته
+                          <span id="Gr_greeting2">وبعد :</span>
+                        </p>
+                       <p style="margin-right: 50px">
+                        بالإشارة إلى الموضوع أعلاه نتقدم إليكم في ما يلي بعرضنا لتوريد من مادة ال
+                        ( <span class="font_article"> {{Article}} </span> )
+                       </p>
+                </div>
+            </div>
+            <!-- LABEL : SPECIFICATION -->
+            <div class="row sizemarginSpecification">
+                <div class="col-xs-12">
+                    <div class="SizeTextSpecification" style="margin-left: 83%">
+                            المواصفات <i class="fa-solid fa-angles-left"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- lISTE : SPECIFICATION -->
+            <div class="row sizemarginSpecification">
+                <div class="col-sm-12">
+                    <ul class="marginRightList">
+                         {{#each ListeArticle as | item |}}   
+                            <li class="font_info_value"> <i class="fa-sharp fa-solid fa-check color_check"></i>
+                            {{item}} 
+                            </li>             
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <!-- LABEL : OFFER PRICE -->
+            <div class="row sizemarginSpecification">
+                <div class="col-sm-12">
+                    <div class="SizeTextOffrePrice" style="margin-left: 83%">
+                            عرض السعر :
+                    </div>
+                </div>
+            </div>
+            <!-- TEXT : OFFER PRICE -->
+            <div class="row sizemarginSpecification">
+                <div class="col-sm-12">
+                    <p class="pharagrape_justify" >{{Details_Price}} </p>
+                </div>
+            </div>
+            <!-- LABEL : TECHNICAL SPECIFICATION -->
+            <div class="row sizemarginTechnical" style="direction: ltr;text-align: left">
+                <div class="col-sm-12">
+                    <div class="SizeTextTechnical" style="margin-right: 68%">
+                           Technical Specifications
+                    </div>
+                </div>
+            </div>
+            <!-- TABLE : TECHNICAL SPECIFICATION -->
+            <div class="row sizemarginTechnical" style="direction: ltr;text-align: left">
+                <div class="col-sm-12">
+                    <table class="table english-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">PROPERTIES TEST</th>
+                                <th scope="col">VALUE (METRIC)</th>
+                                <th scope="col">TEST METHOD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>Product Code</td>
+                                    <td>FapTex 1003F</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Total Weight (5++)</td>
+                                    <td>11000 g/m2</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <td>Yarn Typ</td>
+                                    <td>PES/1100Dtex </td>
+                                    <td>DIN EN ISO 2060</td>
+                                  </tr>
+                                <tr>
+                                    <td>Product Code</td>
+                                    <td>FapTex 1003F</td>
+                                    <td></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- LABEL : OFFER PRICE -->
+            <div class="row sizemarginSpecification">
+                <div class="col-sm-12">
+                    <div class="SizeTextOffrePrice" style="margin-left: 83%">
+                            عرض السعر :
+                    </div>
+                </div>
+            </div>
+            <!-- TABLE : PRICE  -->
+            <div class="row sizemarginSpecification">
+                    <div class="col-sm-12 ">
+                        <table class="table  arabe-table">
+                            <thead>
+                              <tr>            
+                                <th class="font-row w50" scope="col"> الوصف</th>
+                                <th class="font-row" scope="col">الكمية</th>
+                                <th class="font-row" scope="col">السعر</th>
+                                <th class="font-row" scope="col"> القيمة المضافة</th>
+                                <th class="font-row" scope="col"> المجموع</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>مظلات تغطية ساحة مدار حسب المعتمد في شكل مخروطي </td>
+                                    <td>200</td>
+                                    <td>م</td>
+                                    <td>380</td>
+                                    <td style="direction: ltr">  76.00 ريال  </td>
+                                </tr>
+                                
+                            <tr>
+                                <td class="font-row" colspan="3" style="text-align: left;" >  المجموع الفرعي</td>
+                                <td class="font-row-1" >  ر.س.SAR  </td>
+                                <td class="font-row-1" >  8,100.00  </td>    
+                            </tr>
+                            <tr>
+                                <td class="font-row" colspan="3" style="text-align: left;" >إجمالي ضربية القيمة المضافة</td>
+                                <td class="font-row-1" >  ر.س.SAR  </td>
+                                <td class="font-row-1" >  1,215.00  </td>   
+                            </tr>
+                            <tr>
+                                <td class="font-row" colspan="3" style="text-align: left;" >الإجمالي</td>
+                                <td class="font-row-1" >  ر.س.SAR  </td>
+                                <td class="font-row-1" >  9,315.00  </td>        
+                            </tr>
+                            </tbody>
+                          </table>
+                    </div>
+            </div>
+            <!-- IMAGE : ROW 1  -->
+            <div class="row">
+                <div class="col-sm-11 border-image" style="direction: ltr">
+                    
+                    {{#each images as | image |}} 
+                        <img class="Secend-img" src="data:image/png;base64,{{image}}" alt="Red dot" />
+                    {{/each}}
+                </div>
+            </div>
+            <!-- LABEL : PAYMENTS  -->
+            <div class="row sizemarginSpecification">
+                <div class="col-sm-12" >
+                    <div class="SizeTextPayement" style="margin-left: 87%">
+                            الدفعات :
+                    </div>
+                </div>
+            </div>
+            <!-- LISTE : PAYMENTS  -->
+            <div class="row sizemarginSpecification">
+                <div class="col-sm-12">
+                    {{#each payments as | item |}}                           
+                        <p class="margin-payment-liste"> {{item}} </p>
+                    {{/each}}
+                </div>
+            </div>
+            <!-- LABEL : SUPPLY & INSTALATION & PERIOD  -->
+            <div class="row sizemarginSpecification">
+                <div class="col-sm-12">
+                    <div class="SizeTextinstalation" style="margin-left: 75%">
+                           فترةالتوريد و التركيب :  
+                    </div>
+                </div>
+            </div>
+            <!-- TEXT 1 : SUPPLY & INSTALATION & PERIOD -->
+            <div class="row sizemarginSpecification">
+                <div class="col-sm-12 margin-supply-part1">
+                    <p class="margin-payment-liste">
+                           45 يوم تبدأ من تاريخ استلام الدفعة الأولى و اعتماد المخططات التفصيلية و استلام القواعد من العميل ايهم أبعد .
+                    </p>
+                </div>
+            </div>
+            <!-- TEXT 2 : SUPPLY & INSTALATION & PERIOD -->
+            <div class="row sizemarginSpecification">
+                    <div class="col-sm-12 margin-supply-part2">
+                        <p class="margin-payment-liste">
+                            نرجوا أن يكون عرضنا هدا قد نال رضائكم و استحسانكم ة لأي معلومات إضافية أو إيضاحات نرجو من سيادتكم الاتصال بنا.
+                        </p>
+                    </div>
+            </div>
+                <!-- TEXT 3 : SUPPLY & INSTALATION & PERIOD -->
+            <div class="row sizemarginSpecification">
+                    <div class="col-sm-12 margin-supply-part3">
+                        <p>
+                         شاكرين لكم و مقدرين  ,,,
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+</p>
+</body>
+</html>

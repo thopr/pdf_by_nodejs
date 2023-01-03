@@ -1,0 +1,281 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' rel='stylesheet'>  
+</head>
+     
+<body>
+    <div id="background-image"></div>
+    <main>
+        <div class="container-fluid">
+             <!-- DATE && REF -->
+            <div class="row row-margin-top">
+                <!-- DATE -->
+                <div class="col-xs-6">
+                    <span class="SizeText">  Date : </span> {{date}}
+                </div>
+                <!-- SOURCE -->
+                <div class="col-xs-6" style="text-align: center;">
+                    <span class="SizeText">   REF : </span> {{referance}}
+                </div>               
+            </div>
+            <!-- LABEL : OFFER PRICE -->
+            <div class="row row-margin-top-price">
+                    <!-- PRICE -->
+                <div class="col-xs-12">
+                    <div>
+                            <span class="SizeTextPrice1">Offer Price</span>
+                    </div>
+                </div>
+            </div>
+            <!-- INFO CLIENT 1 -->
+            <div class="Group_info_client">
+                    <div class="row row-margin-top-price">
+                        <div class="col-xs-12">
+                            <span class="SizeTextClient"> Attention :</span>
+                            <span class="margin-left-info">{{Attention_1}}</span>
+                        </div>
+                    </div>
+                    <div class="row sizemarginClient">
+                        <div class="col-xs-12">
+                            <span class="SizeTextProject"> The Project  :</span>
+                             <span class="margin-left-info">{{name_projet}}</span>
+                        </div>
+                    </div>
+                    <div class="row sizemarginClient">
+                        <div class="col-xs-12">       
+                            <span class="SizeTextClient">Attention :</span>
+                            <span class="margin-left-info">{{Attention_2}}</span>
+                        </div>
+                    </div>
+                    <div class="row sizemarginClient">
+                        <div class="col-xs-12">
+                            <span class="SizeTextClient">The topic :</span>
+                            <span>  </span>                         
+                        </div>
+                    </div>
+            </div>
+             <!-- GREETING 1 & GREETING 2 & HDPE-->
+            <div class="row sizemarginSubject">
+                <div class="col-xs-12">
+                        <p style="margin-left: 150px">  
+                        Peace, mercy and blessings of God'
+                          <span id="Gr_greeting2">And yet :</span>
+                        </p>
+                       <p style="margin-left: 50px">
+                        With reference to the above subject, we present to you the following with our offer to supply
+                        ( <span class="font_article"> {{Article}} </span> )
+                       </p>
+                </div>
+            </div>
+            <!-- LABEL : SPECIFICATION -->
+            <div class="row sizemarginSubject">
+                <div class="col-xs-12">
+                    <div class="SizeTextSpecification" style="margin-right: 79%">
+                            Specifications <i class="fa-solid fa-angles-right"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- lISTE : SPECIFICATION -->
+            <div class="row sizemargincaractere">
+                <div class="col-xs-12">
+                    <ul class="marginRightList">
+                         {{#each ListeArticle as | item |}}   
+                            <li class="font_info_value"> <i class="fa-sharp fa-solid fa-check color_check"></i>
+                            {{item}} 
+                            </li>             
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <!-- LABEL : OFFER PRICE -->
+            <div class="row sizemarginSubject">
+                <div class="col-xs-12">
+                    <div class="SizeTextPrice" style="margin-right: 84%">
+                             Offer Price :
+                    </div>
+                </div>
+            </div>
+            <!-- TEXT : OFFER PRICE -->
+            <div class="row sizemarginSubject">
+                <div class="col-xs-12">
+                    <p class="pharagrap_text">{{Details_Price}} </p>
+                </div>
+            </div>
+            <!-- LABEL : TECHNICAL SPECIFICATION -->
+            <div class="row sizemarginSubject">
+                <div class="col-xs-12">
+                    <div class="SizeTextTechnical" style="margin-right: 72%">
+                           Technical Specifications
+                    </div>
+                </div>
+            </div>
+            <!-- TABLE : TECHNICAL SPECIFICATION -->
+            <div class="row sizemarginTechnical" >
+                <div class="col-xs-12">
+                    <table class="table english-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">PROPERTIES TEST</th>
+                                <th scope="col">VALUE (METRIC)</th>
+                                <th scope="col">TEST METHOD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>Product Code</td>
+                                    <td>FapTex 1003F</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Total Weight (5++)</td>
+                                    <td>11000 g/m2</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <td>Yarn Typ</td>
+                                    <td>PES/1100Dtex </td>
+                                    <td>DIN EN ISO 2060</td>
+                                  </tr>
+                                <tr>
+                                    <td>Product Code</td>
+                                    <td>FapTex 1003F</td>
+                                    <td></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- LABEL : OFFER PRICE -->
+            <div class="row sizemarginSubject">
+                <div class="col-xs-12">
+                    <div class="SizeTextPrice" style="margin-right: 84%">
+                             Offer Price :
+                    </div>
+                </div>
+            </div>
+            <!-- TABLE : PRICE  -->
+            <div class="row sizemarginSubject">
+                <div class="col-xs-12 ">
+                    <table class="table english-table">
+                                    <thead>
+                                      <tr>
+                                        <th class="w50" scope="col">The description</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">VAT</th>
+                                        <th scope="col">Amount</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+
+                                        <td>School yard umbrellas adopted in TBC conical shape</td>
+                                        <td class="text-centre">200</td>
+                                        <td class="text-centre">م</td>
+                                        <td>380</td>
+                                        <td>76.00 Rial</td>
+                                      </tr>
+                                      <tr>
+
+                                        <td >School yard umbrellas adopted in TBC conical shape</td>
+                                        <td class="text-centre">200</td>
+                                        <td class="text-centre">م</td>
+                                        <td>380</td>
+                                        <td>76.00 Rial</td>
+                                      </tr>
+                                      <tr>
+
+                                        <td>School yard umbrellas adopted in TBC conical shape</td>
+                                        <td class="text-centre">200</td>
+                                        <td class="text-centre">م</td>
+                                        <td>380</td>
+                                        <td>76.00 Rial</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="font-row" colspan="3" style="text-align: right;" >Subtotal</td>
+                                        <td class="" >  SAR  </td>
+                                        <td class="" >  8,100.00  </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-row" colspan="3" style="text-align: right;" >Total VAT</td>
+                                        <td class="" >  SAR  </td>
+                                        <td class="" >  1,215.00  </td>
+                                    </tr>
+                                    <tr>
+
+                                        <td class="font-row" colspan="3" style="text-align: right;" >Total</td>
+                                        <td class="" >  SAR  </td>
+                                        <td class="" >  9,315.00  </td>
+                                    </tr>
+                                    </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- IMAGE : ROW 1  -->
+            <div class="row">
+                <div class="col-sm-11 border-image">
+                    
+                    {{#each images as | image |}} 
+                        <img class="Secend-img" src="data:image/png;base64,{{image}}" alt="Red dot" />
+                    {{/each}}
+                </div>
+            </div>
+            <!-- LABEL : PAYMENTS  -->
+            <div class="row sizemarginSubject">
+                <div class="col-xs-12">
+                    <div class="SizeTextPayments" style="margin-right: 85%">
+                        Payments :
+                    </div>
+                </div>
+            </div>
+            <!-- LISTE : PAYMENTS  -->
+            <div class="row sizemarginSubject">
+                <div class="col-xs-12">
+                    {{#each payments as | item |}}                           
+                        <p class="margin-payment-liste"> {{item}} </p>
+                    {{/each}}
+                </div>
+            </div>
+            <!-- LABEL : SUPPLY & INSTALATION & PERIOD  -->
+            <div class="row sizemarginSubject">
+                <div class="col-xs-12">
+                    <div class="SizeTextTechnical" style="margin-right: 66%">
+                           Supply and installation period :  
+                    </div>
+                </div>
+            </div>
+            <!-- TEXT 1 : SUPPLY & INSTALATION & PERIOD -->
+            <div class="row sizemarginSubject">
+                <div class="col-xs-12 margin-supply-part1">
+                    <p class="margin-payment-liste">
+                        45 days starting from the date of receiving the first payement and approving the detailes plans and receipt Rules from the Client whichever is farther away
+                    </p>
+                </div>
+            </div>
+            <!-- TEXT 2 : SUPPLY & INSTALATION & PERIOD -->
+            <div class="row sizemarginSubject">
+                    <div class="col-xs-12 margin-supply-part2">
+                        <p class="margin-payment-liste">
+                            We hope that pir offer has won your stisfaction and approval and for any additional information or clarification we kindly ask you to contact us.
+                        </p>
+                    </div>
+            </div>
+                <!-- TEXT 3 : SUPPLY & INSTALATION & PERIOD -->
+            <div class="row sizemarginSubject">
+                    <div class="col-xs-12 margin-supply-part3">
+                        <p>
+                           Thank you and appreciated ,,,
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+</p>
+</body>
+</html>
