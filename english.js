@@ -59,7 +59,7 @@ const data = require('./data/data-english.json')
       
  
         await page.pdf({
-            path:'English.pdf',           
+            path:'English.pdf',    // you can change this path for any folder          
             format:'A4',
             displayHeaderFooter: true,       
             headerTemplate:` 

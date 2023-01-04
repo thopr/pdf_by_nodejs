@@ -67,7 +67,7 @@ const data = require('./data/data-arabic.json')
        
  
         await page.pdf({
-            path:'Arabic.pdf',           
+            path:'Arabic.pdf',  // you can change this path for any folder          
             format:'A4',
             displayHeaderFooter: true,       
             headerTemplate:` 
