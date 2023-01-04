@@ -32,13 +32,15 @@ const data = require('./data/data-english.json')
   const compile = async function (templateName,data){
       // GET TEMPLATE 
       const filePath = path.join(process.cwd(),'templates',`${templateName}.hbs`)
-    // COUDING TO  utf8 
+      // COUDING TO  utf8 
       const html = await fs.readFile(filePath,'utf8')
-    // COUDING IMAGE TO  BASE64   
-      const imageBase64 = await couding64Image(data['images'])
-    // SET NEW IMAGE TO DATA JSON     
-      data['images'] = imageBase64
-      
+      // Check if a key exists
+      if(data.hasOwnProperty('images')){
+            // COUDING IMAGE TO  BASE64   
+            const imageBase64 = await couding64Image(data['images'])
+            // SET NEW IMAGE TO DATA JSON     
+            data['images'] = imageBase64
+        } 
       return hbs.compile(html)(data)
   };
  
